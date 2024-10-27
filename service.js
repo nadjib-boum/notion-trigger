@@ -58,12 +58,6 @@ class NotionService {
 
   }
 
-  async getUsers () {
-
-    return await this.client.users.list ();
-
-  }
-
   async getDB () {
 
     const db = await this.client.databases.query ({
